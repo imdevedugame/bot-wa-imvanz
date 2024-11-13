@@ -126,5 +126,5 @@ client.on("message", async (message) => {
     }
 });
 
-// Initialize the bot
+
 client.initialize();
