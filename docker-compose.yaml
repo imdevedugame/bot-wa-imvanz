@@ -1,13 +1,15 @@
 version: '3.8'
 
-service: 
+services: 
 
-  app :
-    image : node:22-alpine
-    workdir : /app
-    volumes :
+  app:
+    image: node:22-alpine
+    working_dir: /app
+    volumes:
       - ./:/app
       - /app/node_modules
-    command : ["node", "index.js"]
-
-
+      - ./.wwebjs_auth:/app/.wwebjs_auth
+      - ./.wwebjs_cache:/app/.wwebjs_cache
+    command: ["node", "index.js"]
+    restart: always
+    tty: true
