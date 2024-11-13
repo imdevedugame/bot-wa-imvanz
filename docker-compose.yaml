@@ -1,0 +1,13 @@
+version: '3.8'
+
+service: 
+
+  app :
+    image : node:22-alpine
+    workdir : /app
+    volumes :
+      - ./:/app
+      - /app/node_modules
+    command : ["node", "index.js"]
+
+
