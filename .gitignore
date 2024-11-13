@@ -1,0 +1,35 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Environment variables
+.env
+
+# Docker files
+Dockerfile
+docker-compose.yml
+*.tar
+
+# WhatsApp Web.js cache and authentication
+.wwebjs_auth/
+.wwebjs_cache/
+
+# Ignore all log files
+*.log
+
+# VSCode settings (optional, jika Anda tidak ingin menyimpan konfigurasi spesifik VSCode di repo)
+.vscode/
+
+# Ignore output of build tools
+dist/
+build/
+
+# MacOS specific files
+.DS_Store
+
+# Windows specific files
+Thumbs.db
+
+# Coverage folder (jika menggunakan alat pengujian dengan laporan cakupan kode)
+coverage/
